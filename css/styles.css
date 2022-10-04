@@ -1,0 +1,182 @@
+/* estilos iniciales  */
+
+
+*{
+  margin: 0%;
+  padding: 0px;
+  text-decoration: none;
+  text-transform: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 250, 141);
+  }
+
+@font-face {
+  font-family: 'new-font';
+  src: url(../fonts/Cosmic\ Blaster.ttf);
+}
+
+.custom-font {
+  font-family: 'new-font';
+  color: yellow;
+}
+
+/* estilos de header*/
+
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(66, 99, 49, 0.825);
+  text-align: center;
+  color: aliceblue;
+}
+
+#header-logo{
+  grid-column: 1 / 3;
+  width: 60px;
+}
+
+#header-title{
+  grid-column: 2 / 3;
+}
+
+.logo {
+  width: 60px;
+  }
+
+/* estilos de main */
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
+  margin: 2px;
+  padding: 4px;
+  background-color: rgb(243, 250, 141);
+  /* background-image: radial-gradient(transparent 28px black 28px,
+  transparent 28px black 28px); */
+}
+
+.item-1 {
+  grid grid-column: 1 / 2;
+}
+
+.item-2 {
+  grid grid-column: 2 / 1;
+}
+
+.sub-title-text{
+  font-family: "new-font";
+  }
+
+.layout-grid-games {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100%;
+  margin: 2px;
+  padding: 4px;
+  background-color: rgb(243, 250, 141);
+}
+
+.item {
+  display: flex;
+}
+
+#sub-item {
+  display: flex;
+  flex-grow: 1;
+}
+
+
+#sub-item {
+  text-decoration: none;
+}
+
+#sub-item:hover {
+  border: 1px solid rgba(212, 255, 0, 0.963);
+  background-color: rgba(66, 99, 49, 0.825);
+}
+
+.a {
+  text-decoration: none;
+}
+
+#instructional-video{
+  width: 80%;
+}
+
+/* Estilos de footer */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  gap: 20px;
+  background-color: rgba(66, 99, 49, 0.825);
+  text-align: justify ;
+  color: aliceblue;
+}
+
+#flex-container:hover{
+  width: 350%;
+  background-color: blue;
+}
+
+#game-icon {
+  display: flex;
+  flex-basis: auto;
+  width: 80%;
+}
+
+/* #game-icon:hover {
+  width: 100% ;
+} */
+
+/* URGENTE: intento de crear tercer grid */
+
+.challenge-layout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  margin: 2px;
+  padding: 4px;
+  background-color: rgb(243, 250, 141);
+  /* background-image: radial-gradient(transparent 28px black 28px,
+  transparent 28px black 28px); */
+}
+
+
+.challenge-item-1 {
+   grid-column: 1 / 3;
+}
+
+.challenge-item-2 {
+   grid-column: 2 / 3;
+}
+
+.challenge-item-3 {
+  grid grid-column: 3 / 3;
+}
+
+.flex-game {
+  display: flex;
+  flex-direction: row;
+  flex-grow: inherit; 
+}
+
+#flex-container {
+  background-color: orange;
+  -ms-grid-row-align: center;
+  gap: 10px;
+}
+
+/* .flex-podcast{
+  display: flex;
+  flex-direction: row;
+}
+
+#flex-podcast {
+  display: flex;
+  flex-basis: auto;
+  width: 30%;
+} */

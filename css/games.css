@@ -1,0 +1,5 @@
+.layout {
+  display: flex;
+  -ms-flex-direction: row;
+  background-color: yellowgreen;
+}
